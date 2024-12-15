@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com/soap/stats"
+           xmlns="http://example.com/soap/stats"
+           elementFormDefault="qualified">
+
+    <xs:element name="getStatisticByIdRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getStatisticByIdResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="stat" type="xs:long"/>
+                <!-- Add other fields here based on your entity -->
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
